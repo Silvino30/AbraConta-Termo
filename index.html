@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termo de Transferência | AbraConta (simulação)</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root { --azul:#112836; --azul2:#1d4257; --fundo:#f4f6f8; --texto:#1f2a33; --suave:#5b6b77; --borda:#d9e0e5; --ok:#1f7a4d; --alerta:#8a5a00; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background:var(--fundo); color:var(--texto); line-height:1.5; }
+  .faixa { background:#fff3cd; color:var(--alerta); text-align:center; font-size:13px; padding:8px 16px; border-bottom:1px solid #f0d98a; }
+  header { background:var(--azul); color:#fff; padding:20px 16px; }
+  header .in { max-width:760px; margin:0 auto; }
+  header small { opacity:.75; letter-spacing:.04em; text-transform:uppercase; font-size:12px; }
+  header h1 { margin:4px 0 0; font-size:22px; font-weight:650; }
+  main { max-width:760px; margin:0 auto; padding:20px 16px 48px; }
+  .card { background:#fff; border:1px solid var(--borda); border-radius:12px; padding:20px; margin-bottom:16px; }
+  .card h2 { margin:0 0 12px; font-size:17px; }
+  .passos { display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+  .passo { flex:1; min-width:140px; background:#fff; border:1px solid var(--borda); border-radius:10px; padding:10px 12px; font-size:13px; color:var(--suave); }
+  .passo b { display:block; color:var(--azul); font-size:14px; }
+  .passo.ativo { border-color:var(--azul2); box-shadow:0 0 0 2px rgba(29,66,87,.12); }
+  .termo { max-height:320px; overflow:auto; border:1px solid var(--borda); border-radius:8px; padding:14px 16px; background:#fbfcfd; font-size:14px; }
+  .termo h3 { font-size:14px; margin:14px 0 4px; }
+  .termo h3:first-child { margin-top:0; }
+  label { display:block; font-size:14px; font-weight:600; margin:12px 0 6px; }
+  input[type=text] { width:100%; padding:11px 12px; border:1px solid var(--borda); border-radius:8px; font-size:15px; }
+  input[type=text]:focus { outline:2px solid rgba(29,66,87,.35); border-color:var(--azul2); }
+  .check { display:flex; gap:10px; align-items:flex-start; margin-top:14px; font-size:14px; font-weight:400; }
+  .check input { margin-top:3px; width:18px; height:18px; flex:none; }
+  .assinatura { font-family: "Brush Script MT", "Segoe Script", cursive; font-size:28px; color:var(--azul); min-height:44px; border-bottom:1px dashed var(--borda); margin-top:8px; padding:4px 2px; }
+  button { margin-top:18px; width:100%; padding:14px; font-size:16px; font-weight:650; border:0; border-radius:10px; background:var(--azul); color:#fff; cursor:pointer; }
+  button:disabled { background:#9aa7b0; cursor:not-allowed; }
+  .erro { color:#a4262c; font-size:13px; margin-top:8px; min-height:18px; }
+  .sucesso { display:none; text-align:center; }
+  .sucesso .selo { width:64px; height:64px; border-radius:50%; background:#e6f4ec; color:var(--ok); display:flex; align-items:center; justify-content:center; font-size:34px; margin:4px auto 12px; }
+  .protocolo { display:inline-block; margin:10px 0 4px; padding:10px 16px; border-radius:8px; background:var(--fundo); border:1px solid var(--borda); font-family: ui-monospace, Menlo, Consolas, monospace; font-size:20px; letter-spacing:.06em; }
+  .nota { color:var(--suave); font-size:13px; }
+  .whats { display:inline-block; margin-top:14px; padding:12px 18px; border-radius:10px; background:#1f7a4d; color:#fff; text-decoration:none; font-weight:650; }
+</style>
+</head>
+<body>
+<div class="faixa">Ambiente de <b>simulação</b> para testes do onboarding. Este termo é um modelo fictício e não tem validade jurídica.</div>
+<header><div class="in"><small>AbraConta · Migração de contabilidade</small><h1>Termo de Transferência de Responsabilidade Contábil</h1></div></header>
+
+<main>
+  <div class="passos">
+    <div class="passo ativo" id="p1"><b>1. Conferir</b>Leia o termo</div>
+    <div class="passo" id="p2"><b>2. Assinar</b>Concordância e assinatura</div>
+    <div class="passo" id="p3"><b>3. Avisar</b>Responder no WhatsApp</div>
+  </div>
+
+  <section id="formulario">
+    <div class="card">
+      <h2>Termo (modelo de simulação)</h2>
+      <div class="termo" id="textoTermo">
+        <h3>1. Objeto</h3>
+        <p>Pelo presente termo, a empresa identificada abaixo (CONTRATANTE) formaliza a transferência dos serviços contábeis, antes prestados por sua contabilidade anterior, para a AbraConta (CONTRATADA), a partir da data de assinatura.</p>
+        <h3>2. Documentos e acessos</h3>
+        <p>A CONTRATANTE declara que as informações, documentos e acessos fornecidos durante o onboarding são verdadeiros e autoriza a CONTRATADA a utilizá-los exclusivamente para a execução dos serviços contratados, com sigilo e segurança.</p>
+        <h3>3. Contabilidade anterior</h3>
+        <p>A CONTRATANTE se compromete a comunicar a contabilidade anterior sobre a transferência e a solicitar a entrega dos documentos e informações necessários à continuidade dos serviços.</p>
+        <h3>4. Início dos serviços</h3>
+        <p>Os serviços passam a ser prestados pela CONTRATADA após a conferência das informações pela equipe responsável, com comunicação à CONTRATANTE pelo canal oficial de atendimento.</p>
+        <h3>5. Disposições gerais</h3>
+        <p>As demais condições seguem o contrato de prestação de serviços firmado entre as partes.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Dados e assinatura</h2>
+      <label for="empresa">Razão social ou CNPJ da empresa</label>
+      <input type="text" id="empresa" autocomplete="off" placeholder="Ex.: Empresa Exemplo Ltda">
+      <label for="nome">Nome completo do responsável</label>
+      <input type="text" id="nome" autocomplete="off" placeholder="Como consta no documento">
+      <div class="assinatura" id="previa" aria-live="polite"></div>
+      <label class="check"><input type="checkbox" id="concordo"> Li o termo, declaro ser responsável pela empresa e concordo com a transferência.</label>
+      <button id="assinar" disabled>Assinar termo</button>
+      <div class="erro" id="erro"></div>
+    </div>
+  </section>
+
+  <section class="card sucesso" id="sucesso">
+    <div class="selo">✓</div>
+    <h2>Termo assinado</h2>
+    <p>Assinatura registrada para <b id="rEmpresa"></b>, por <b id="rNome"></b>, em <span id="rData"></span>.</p>
+    <div>Protocolo</div>
+    <div class="protocolo" id="protocolo">TT-000000</div>
+    <p class="nota">Agora é só voltar ao WhatsApp e avisar o Abraão: responda <b>"assinei"</b> ou envie o protocolo acima.</p>
+    <a class="whats" id="voltar" href="https://wa.me/">Voltar ao WhatsApp</a>
+  </section>
+</main>
+
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var numeroAbraao = (q.get('wa') || '').replace(/\D/g, ''); // opcional: ?wa=55119...
+  var $ = function (id) { return document.getElementById(id); };
+  var empresa = $('empresa'), nome = $('nome'), concordo = $('concordo'), btn = $('assinar');
+  if (q.get('empresa')) empresa.value = q.get('empresa');
+
+  function validar() {
+    $('previa').textContent = nome.value.trim();
+    btn.disabled = !(empresa.value.trim().length >= 3 && nome.value.trim().split(/\s+/).length >= 2 && concordo.checked);
+    $('p2').classList.toggle('ativo', !!(empresa.value || nome.value));
+  }
+  [empresa, nome, concordo].forEach(function (el) { el.addEventListener('input', validar); el.addEventListener('change', validar); });
+
+  function gerarProtocolo() {
+    var chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789', s = '';
+    var buf = new Uint32Array(6);
+    (window.crypto || window.msCrypto).getRandomValues(buf);
+    for (var i = 0; i < 6; i++) s += chars[buf[i] % chars.length];
+    return 'TT-' + s;
+  }
+
+  btn.addEventListener('click', function () {
+    if (btn.disabled) return;
+    var protocolo = gerarProtocolo();
+    $('rEmpresa').textContent = empresa.value.trim();
+    $('rNome').textContent = nome.value.trim();
+    $('rData').textContent = new Date().toLocaleString('pt-BR');
+    $('protocolo').textContent = protocolo;
+    var texto = encodeURIComponent('Assinei o termo de transferência. Protocolo ' + protocolo);
+    $('voltar').href = 'https://wa.me/' + numeroAbraao + '?text=' + texto;
+    $('formulario').style.display = 'none';
+    $('sucesso').style.display = 'block';
+    $('p2').classList.remove('ativo'); $('p1').classList.remove('ativo'); $('p3').classList.add('ativo');
+    window.scrollTo(0, 0);
+  });
+})();
+</script>
+</body>
+</html>
